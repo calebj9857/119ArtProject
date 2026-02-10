@@ -6,7 +6,7 @@ color1 = "whitesmoke"
 color2 = "gainsboro"
 
 #configure tunnel
-height = 500
+height = 225
 
 painter = trtl.Turtle()
 painter.speed(0)
@@ -37,9 +37,9 @@ wn = trtl.Screen()
 astronaut = "astro.gif"
 wn.addshape(astronaut)
 astro1 = trtl.Turtle()
-astro.shape()
+astro.shape(astronaut)
 astro.penup()
-astro.goto(0,0)
+astro.goto(150,-70)
 astro.pendown()
 
 #import second astronaut
@@ -53,5 +53,5 @@ astro2.goto(-150,70)
 astro2.pendown()
 
 wn = trtl.Screen()
-
 wn.mainloop()
+
