@@ -16,7 +16,7 @@ space = 1
 angle = 90
 seg = int(360/angle)
 
-#draw tunnel
+#draw tunnel (iteration, conditional, movement)
 while (painter.ycor() < height):
     if (space % 10 == 0):
         painter.fillcolor(color1)
@@ -54,4 +54,5 @@ astro2.pendown()
 
 wn = trtl.Screen()
 wn.mainloop()
+
 
