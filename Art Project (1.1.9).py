@@ -9,12 +9,13 @@ color2 = "gainsboro"
 height = 500
 
 painter = trtl.Turtle()
-painter.speed(1000000000000000)
+painter.speed(0)
 painter.color(color1)
 painter.goto(0,0)
 space = 1
 angle = 90
 seg = int(360/angle)
+
 #draw tunnel
 while (painter.ycor() < height):
     if (space % 10 == 0):
@@ -35,11 +36,22 @@ while (painter.ycor() < height):
 wn = trtl.Screen()
 astronaut = "astro.gif"
 wn.addshape(astronaut)
-astro = trtl.Turtle()
+astro1 = trtl.Turtle()
 astro.shape()
 astro.penup()
 astro.goto(0,0)
 astro.pendown()
 
+#import second astronaut
 wn = trtl.Screen()
+astronaut2 = "astro2.gif"
+wn.addshape(astronaut2)
+astro2 = trtl.Turtle()
+astro2.shape(astronaut2)
+astro2.penup()
+astro2.goto(-150,70)
+astro2.pendown()
+
+wn = trtl.Screen()
+
 wn.mainloop()
